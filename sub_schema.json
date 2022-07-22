@@ -1,0 +1,9 @@
+{
+  "other_data":{
+
+    "type":"string",
+    "pattern":"^[0-9]+$"
+
+  }
+
+}

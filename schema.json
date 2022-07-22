@@ -1,0 +1,24 @@
+
+{
+	"$id": "Testing/schema.json",
+	"title": "Testing",
+	"description": "This document is meant to test json-schema validations",
+	"type": "object",
+	"properties":
+	{
+		"data":{
+
+   			"type":"string",
+   			"format":"date-time",
+     		"pattern":"^19|20([0-1]|2([0-1]|2-0([1-6]|7-(0|1[0-8]))))[T0-9-:.]+$"
+
+		},
+    "other_data":{
+        "$ref": "./sub_schema.json#/other_data"
+    }
+	},
+  	"required": [
+  	 	"data",
+      "other_data"
+  	]
+}
